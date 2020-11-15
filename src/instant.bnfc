@@ -1,0 +1,15 @@
+Prog. Program ::= [Statement] ;
+SAssignment. Statement ::= Ident "=" Expression;
+SExpression. Statement ::= Expression ;
+separator Statement ";" ;
+AdditionExpression.            Expression1   ::= Expression2 "+"  Expression1 ;
+SubtractExpression.            Expression2   ::= Expression2 "-"  Expression3 ;
+MultiplyExpression.            Expression3   ::= Expression3 "*"  Expression4 ;
+DivideExpression.            Expression3   ::= Expression3 "/"  Expression4 ;
+LiteralExpression.            Expression4   ::= Integer ;
+VarExpression.            Expression4   ::= Ident ;
+coercions Expression 4;
+
+
+
+
